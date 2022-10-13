@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<title>_htmresc\ReleaseNotes_Patch.html</title>
+</head>
+
+<body style="font-size: 10pt; font-family: Verdana;">
+
+<h3 style="color: blue; text-decoration: underline;">STM32CubeWB Firmware Package V1.13.3 / 25-Mars-2022</h3>
+
+<div style="margin-left: 18pt;">
+<p>
+<b><u>Main Changes</u></b>
+</p>
+
+<p>
+<b>BLE updates:</b>
+</p>
+<p>
+- Introducing following new binary Full stack extended: stm32wbxx_BLE_Stack_full_extended_fw.bin including BLE extended advertizing features
+</p>
+<p>
+- Introducing following new binary HCI layer extended: stm32wbxx_BLE_HCILayer_extended_fw.bin including BLE extended advertizing features
+</p>
+<p>
+- Compared to previous delivery, the binary stm32wbxx_BLE_Stack_full_fw.bin is linked to modified Basic stack library with included Phy update(2Mb/s) and additional beacon
+</p>
+<p>
+- BLE Binaries FWs are compliant to BLE5.2 certified features TCRL2021-1
+</p>
+<p>
+- BLE security pairing fix
+</p>
+<p>
+- BLE Extended advertising features improvments
+</p>
+
+<p>
+<b>BLE MAC updates</b>
+</p>
+<p>
+- Internal buffer management enhancement on stack switching
+</p>
+
+<p>
+<b>Zigbee updates</b>
+</p>
+<p>
+- Zigbee stack patches in order to solve R22 security vulnerability reported by the CSA (Security Incident Number: 2021-ZP-0401)
+</p>
+<p>
+- Fix Manufacturer ID management : Node Descriptor Response Manufacturer ID can be set using ZbApsSet. apsManufacturerId is no more overwritten when calling ZbStartup
+</p>
+
+<p>
+<b>BLE Zigbee Static updates</b>
+</p>
+<p>
+- Fix memory leak on transition from Zigbee to BLE
+</p>
+<p>
+- Following application has been added: /P-NUCLEO-WB55.Nucleo/Applications/BLE_Zigbee/BLE_Zigbee_Static
+</p>
+
+<p>
+<b>BLE Zigbee Dynamic updates</b>
+</p>
+<p>
+- Power consumption enhancement after BLE client disconnection
+</p>
+
+<p>
+<b>BLE-Thread Dynamic Concurrent Mode</b>
+</p>
+<p>
+- Correct low power consumption issue
+</p>
+
+<p>
+<b>CMSIS Device update </b>
+</p>
+<p>
+- Align ADC registers naming on Reference Manual (for STM32WB15xx & STM32WB10xx)
+</p>
+
+<p>
+<b>HAL/LL Drivers update </b>
+</p>
+<p>
+- Align ADC Registers naming on Reference Manual (for STM32WB15xx & STM32WB10xx)
+</p>
+
+
+</div>
+</body>
+</html>
